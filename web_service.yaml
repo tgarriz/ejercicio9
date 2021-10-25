@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: arba
+  name: jobvacancy-service
+  labels:
+    app: jobvacancy
+spec:
+  selector:
+   app: jobvacancy
+  ports:
+  - protocol: TCP
+    port: 3000
+  type: ClusterIP
