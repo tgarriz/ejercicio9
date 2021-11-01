@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   namespace: arba
-  name: postgres-service
+  name: postgresservice
   labels:
     app: jobvacancy
 spec:
@@ -11,4 +11,5 @@ spec:
   ports:
   - protocol: TCP
     port: 5432
+    targetPort: 5432
   type: ClusterIP

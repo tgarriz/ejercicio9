@@ -8,4 +8,4 @@ metadata:
 data:
   RACK_ENV: "production"
   PORT: "3000"
-  DATABASE_URL: postgres
+  
